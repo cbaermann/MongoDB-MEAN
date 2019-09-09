@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Page</title>
+</head>
+<body>
+    <h1>Welcome to the Fox Dashboard!</h1>
+    <h3>All logged foxes: </h3>
+    <% for(var i in foxes) { %>
+        <p><a href="/foxes/<%= foxes[i].id %>"><%= foxes[i].name %></a></p>
+    <% } %>
+
+    <a href="/foxes/new">Add a new Fox!</a>
+</body>
+</html>

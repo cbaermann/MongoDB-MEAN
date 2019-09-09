@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <h1>Create A Fox!</h1>
+    <form action="/createFox" method="POST">
+        <h3>Name:<input type="text" name="name" class="formBox"></h3>
+        <h3>Size:<input type="text" name="size" class="formBox"></h3>
+        <h3>Color:<input type="text" name="color" class="formBox"></h3>
+        <h3>Disposition:<input type="text" name="disposition" class="formBox"></h3>
+        <select name="cuteness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <input type="submit" value="Create A Fox!">
+    </form>
+</body>
+</html>

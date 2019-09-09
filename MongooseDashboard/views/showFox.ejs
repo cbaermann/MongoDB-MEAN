@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Show Fox Information</title>
+    </head>
+
+    <body>
+        <a href="/">Home</a>
+        <h1>Here is some information about this Fox</h1>
+        <h3>Name: <%= fox.name %></h3>
+        <h3>Size: <%= fox.size %></h3>
+        <h3>Color: <%= fox.color %></h3>
+        <h3>Disposition: <%= fox.disposition %></h3>
+        <h3>Cuteness: <%= fox.cuteness %></h3>
+
+        <div class="options">
+            <a href="/foxes/edit/<%= fox.id %>">Edit Fox</a>
+            <br>
+            <br>
+            <a href="/foxes/delete/<%= fox.id %>">Delete Fox</a>
+        </div>
+    </body>
+</html>
