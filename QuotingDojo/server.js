@@ -36,7 +36,9 @@ app.post('/quotes', (request, response)=> {
 
 app.get('/quotes', (request, response)=> {
     Quote.find()
-        .then(data => response.render("quotes", {quotes: data}))
+        .then((data) =>{
+            response.render("quotes", {quotes: data});
+        })
         .catch(err => console.log(err))
         
         
