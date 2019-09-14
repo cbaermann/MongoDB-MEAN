@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>RESTful Tasks API</h1>
+  <h2>All the Tasks:</h2>
+  <button (click) = "getTasksFromService()">Get All Tasks!</button>
+  <div *ngFor = "let task of tasks">
+    <p>{{task.title}}<button (click)="info(task)">Show</button></p>
+    <div *ngIf = "something">
+      <p>{{task.title}} <br> {{task.description}}</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<router-outlet></router-outlet>
